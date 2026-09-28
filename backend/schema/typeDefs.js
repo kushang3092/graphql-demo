@@ -6,6 +6,7 @@ const typeDefs = `#graphql
     provider: String
     avatar: String
     createdAt: String
+    expenses: [Expense!]!
   }
 
   type Expense {
