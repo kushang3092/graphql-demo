@@ -25,6 +25,10 @@ const resolvers = {
     id: (parent) => parent._id?.toString() ?? parent.id,
     createdAt: (parent) =>
       parent.createdAt ? new Date(parent.createdAt).toISOString() : null,
+    expenses : async(parent)=>{
+      const expenses = await Expense.find({userId:parent._id});
+      return expenses;
+    }
   },
 
   Expense: {
