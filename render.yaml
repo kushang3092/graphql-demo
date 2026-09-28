@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: graphql-demo-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: test
+      - key: FRONTEND_URL
+        sync: false
