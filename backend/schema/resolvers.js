@@ -27,6 +27,8 @@ const resolvers = {
       parent.createdAt ? new Date(parent.createdAt).toISOString() : null,
     expenses : async(parent)=>{
       const expenses = await Expense.find({userId:parent._id});
+      console.log("expenses",expenses);
+      
       return expenses;
     }
   },
