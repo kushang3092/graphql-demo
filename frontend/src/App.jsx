@@ -9,7 +9,7 @@ export default function App() {
     <div className="app-container">
       <header>
         <h1>{tab === "users" ? "Users" : "Expenses"}</h1>
-        <p className="subtitle">Fetched from MongoDB via GraphQL</p>
+        <p className="subtitle">Fetched via GraphQL</p>
       </header>
 
       <div className="tabs">

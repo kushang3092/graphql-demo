@@ -1,0 +1,15 @@
+{
+  "default_branch": "master",
+  "branches": [
+    "main",
+    "master"
+  ],
+  "parent": {
+    "main": "master",
+    "master": null
+  },
+  "order": [
+    "master",
+    "main"
+  ]
+}
